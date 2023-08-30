@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoffeDetails"
+    android:background="@color/light_blue">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_txt"
+        android:text="Palmistry"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/avatar"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:src="@drawable/human7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/home_txt"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:text="Ismayil"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@+id/image"
+        app:layout_constraintTop_toBottomOf="@id/home_txt"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clock"
+        android:src="@drawable/clock"
+        app:layout_constraintLeft_toRightOf="@+id/image"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:text="30 Minutes"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@+id/clock"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/heart"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/percent"
+        android:text="75%"
+        android:textSize="15sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="42dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:layout_marginTop="22dp"
+        android:text="Hiç gelmeyecek olan mutluluğu beklemekmiş hayat..
+Hayata dair tahminler arıyorsan, doğru yere geldin.."
+        android:textSize="14sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/picture_txt"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        android:layout_marginTop="46dp"
+        android:text="Take pictures of left hand"
+        android:textSize="24sp"
+        android:textColor="@color/black"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/camera_layout"
+        android:background="@drawable/piscaes_back"
+        app:layout_constraintTop_toBottomOf="@id/picture_txt"
+        android:paddingBottom="43dp"
+        android:layout_marginTop="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/camera"
+            android:src="@drawable/camera"
+            app:layout_constraintLeft_toLeftOf="@id/camera_layout"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="37dp"
+            android:layout_marginStart="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/with"
+            android:text="With Camera"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/camera"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/piscaes"
+            android:layout_marginTop="36dp"
+            android:layout_marginStart="34dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/take"
+            app:layout_constraintLeft_toRightOf="@id/camera"
+            app:layout_constraintTop_toBottomOf="@id/with"
+            android:layout_marginTop="19dp"
+            android:layout_marginStart="24dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gallery_layout"
+        android:background="@drawable/gallery_back"
+        app:layout_constraintTop_toBottomOf="@id/camera_layout"
+        android:paddingBottom="43dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gallery"
+            android:src="@drawable/gallery"
+            app:layout_constraintLeft_toLeftOf="@id/gallery_layout"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="37dp"
+            android:layout_marginStart="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/from"
+            android:text="From Gallery"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/gallery"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/piscaes"
+            android:layout_marginTop="36dp"
+            android:layout_marginStart="34dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/choose"
+            app:layout_constraintLeft_toRightOf="@id/gallery"
+            app:layout_constraintTop_toBottomOf="@id/from"
+            android:layout_marginTop="19dp"
+            android:layout_marginStart="24dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

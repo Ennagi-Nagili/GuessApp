@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Libra">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="110dp"
+        android:background="@color/light_blue">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/tool_bar"
+            android:id="@+id/toolbar"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/libra"
+            android:src="@drawable/libra_sign"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginTop="35dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aqua"
+            android:src="@drawable/aqua_sign"
+            app:layout_constraintLeft_toRightOf="@id/libra"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginTop="35dp"
+            android:paddingTop="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gemini_sign"
+            app:layout_constraintLeft_toRightOf="@id/aqua"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginTop="35dp"
+            android:paddingTop="10dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/line1"
+            android:src="@drawable/line"
+            app:layout_constraintTop_toBottomOf="@id/libra"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycler"
+            app:layout_constraintTop_toBottomOf="@+id/line1"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/line2"
+            android:src="@drawable/line"
+            app:layout_constraintTop_toBottomOf="@id/recycler"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/para"
+            android:text="Wednesday Jul 21"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/recycler"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You might be called upon to choose between two ways of handling a situation, Libra. The old way suddenly conflicts with the new. Which way are you going to proceed? Don't be thrown off course by fast talk and neon lights just because they grab attention. On the other hand, don't assume that the way that has worked forever is still the best. Use your intuition to choose the best route for you."
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/para"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="15dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="16dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

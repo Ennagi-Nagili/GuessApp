@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/palmistry"
+        android:title="Palmistry"
+        android:icon="@drawable/ic_palmistry"/>
+
+    <item
+        android:id="@+id/horoscope"
+        android:title="Horoscope"
+        android:icon="@drawable/ic_horoscope"/>
+
+    <item
+        android:id="@+id/inbox"
+        android:title="Inbox"
+        android:icon="@drawable/ic_inbox"/>
+</menu>
